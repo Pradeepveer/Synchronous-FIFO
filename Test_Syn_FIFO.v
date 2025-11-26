@@ -4,9 +4,9 @@
 // Company: 
 // Engineer:
 //
-// Create Date:   21:45:16 11/05/2017
+// Create Date:   21:45:16 11/05/2015
 // Design Name:   Test Synchronus FIFO
-// Module Name:   E:/CDAC Work/CDAC/XilinxISE_danish/Synchronus_FIFO/Test_Syn_FIFO.v
+// Module Name:   Synchronus_FIFO/Test_Syn_FIFO.v
 // Project Name:  Synchronus_FIFO
 // Target Device:  
 // Tool versions:  

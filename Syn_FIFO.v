@@ -1,6 +1,5 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Engineer: Danish Azmi
 // 
 // Create Date:    21:42:56 11/05/2025
 // Design Name: Synchronus FIFO
@@ -50,16 +49,16 @@ end
 always @(posedge clk or posedge rst)
 begin
    if( rst )
-       fifo_counter <= 0;		// Reset the counter of FIFO
+      fifo_counter <= 0;		// Reset the counter of FIFO
 
    else if( (!buf_full && wr_en) && ( !buf_empty && rd_en ) )  //When doing read and write operation simultaneously
-       fifo_counter <= fifo_counter;			// At this state, counter value will remain same.
+      fifo_counter <= fifo_counter;			// At this state, counter value will remain same.
 
    else if( !buf_full && wr_en )			// When doing only write operation
-       fifo_counter <= fifo_counter + 1;
+      fifo_counter <= fifo_counter + 1;
 
    else if( !buf_empty && rd_en )		//When doing only read operation
-       fifo_counter <= fifo_counter - 1;
+      fifo_counter <= fifo_counter - 1;
 
    else
       fifo_counter <= fifo_counter;			// When doing nothing.
